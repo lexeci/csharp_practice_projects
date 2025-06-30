@@ -1,0 +1,24 @@
+@page
+@model LoginModel
+@{
+    ViewData["Title"] = "Login - SafeVault";
+}
+
+<h2>Login</h2>
+
+<form method="post">
+    <label asp-for="Username">Username:</label>
+    <input asp-for="Username" />
+    <span asp-validation-for="Username"></span>
+
+    <label asp-for="Password">Password:</label>
+    <input asp-for="Password" type="password" />
+    <span asp-validation-for="Password"></span>
+
+    <button type="submit">Login</button>
+</form>
+
+@if (Model.Message != null)
+{
+    <p>@Model.Message</p>
+}

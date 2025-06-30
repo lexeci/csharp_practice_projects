@@ -1,0 +1,6 @@
+@DIProjectTest_HostAddress = http://localhost:5156
+
+GET {{DIProjectTest_HostAddress}}
+Accept: application/json
+
+###

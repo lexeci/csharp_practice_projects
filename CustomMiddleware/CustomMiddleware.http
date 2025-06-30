@@ -1,0 +1,28 @@
+@CustomMiddleware_HostAddress = http://localhost:5251
+
+GET {{CustomMiddleware_HostAddress}}/api/
+Accept: application/json
+###
+
+GET {{CustomMiddleware_HostAddress}}/api/blogs
+Accept: application/json
+###
+
+POST {{CustomMiddleware_HostAddress}}/api/blogs
+Content-Type: application/json
+
+{
+  "Title": "Example post",
+  "Body": "Example post body"
+}
+
+###
+
+POST {{CustomMiddleware_HostAddress}}/api/blogs
+Content-Type: application/json
+X-Api-Key: badExample
+
+{
+  "Title": "Example post",
+  "Body": "Example post body"
+}

@@ -1,0 +1,26 @@
+@DemoRolesASP_HostAddress = http://localhost:5240
+
+###
+POST {{DemoRolesASP_HostAddress}}/create-role
+
+###
+POST {{DemoRolesASP_HostAddress}}/assign-roles
+
+###
+POST {{DemoRolesASP_HostAddress}}/add-claim
+
+###
+POST {{DemoRolesASP_HostAddress}}/account/login
+
+###
+GET {{DemoRolesASP_HostAddress}}/
+Accept: application/json
+###
+
+GET {{DemoRolesASP_HostAddress}}/admin-only
+###
+
+GET {{DemoRolesASP_HostAddress}}/user-claim-check
+###
+
+GET {{DemoRolesASP_HostAddress}}/blogs

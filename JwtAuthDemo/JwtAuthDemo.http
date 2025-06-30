@@ -1,0 +1,14 @@
+@JwtAuthDemo_HostAddress = http://localhost:5275
+
+GET {{JwtAuthDemo_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+POST {{JwtAuthDemo_HostAddress}}/User/login
+Accept: application/json
+
+{
+  "username": "testuser",
+  "password": "password123"
+}

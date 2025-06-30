@@ -1,0 +1,5 @@
+GET http://localhost:5184/
+###
+GET http://localhost:5184/api
+###
+GET http://localhost:5184/api/products/3000

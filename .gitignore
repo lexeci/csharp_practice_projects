@@ -1,0 +1,44 @@
+## Build results
+**/bin/
+**/obj/
+
+## User-specific files
+**/*.user
+**/*.suo
+**/*.userosscache
+**/*.sln.docstates
+
+## Rider / VS Code / JetBrains IDEs
+.idea/
+.vscode/
+
+## ASP.NET-specific
+**/wwwroot/lib/
+
+## Logs
+**/*.log
+
+## DotNet secrets
+**/secrets.json
+
+## Entity Framework Migrations snapshot
+**/Migrations/*Snapshot.cs
+
+## Docker files
+**/*.pid
+
+## System files
+.DS_Store
+Thumbs.db
+
+## NuGet packages
+**/packages/
+*.nupkg
+*.snupkg
+
+## Tests results
+**/TestResults/
+
+## Publish output
+**/publish/
+

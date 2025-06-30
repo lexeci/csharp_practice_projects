@@ -1,0 +1,34 @@
+@crudapi_HostAddress = http://localhost:5204
+
+GET {{crudapi_HostAddress}}/
+###
+
+GET {{crudapi_HostAddress}}/items
+###
+
+GET {{crudapi_HostAddress}}/items/1
+###
+
+POST {{crudapi_HostAddress}}/items
+Content-Type: application/json
+
+{
+  "name": "Keyboard",
+  "description": "Mechanical RGB keyboard",
+  "price": 150,
+  "quantity": 7
+}
+###
+
+PUT {{crudapi_HostAddress}}/items/3
+Content-Type: application/json
+
+{
+  "name": "Keyboardos",
+  "description": "Mechanical RGB keyboardosa",
+  "price": 1150,
+  "quantity": 37
+}
+###
+
+DELETE {{crudapi_HostAddress}}/items/3
